@@ -6,6 +6,10 @@ agar tidak terjadi error
 #Sad-Bot
 Script WhatsApp Bot Multi Device
 
+<p align="center">
+<img width="" src="https://img.shields.io/github/repo-size/FahriAdison/Sad-Bot-Case?color=red&label=Repo%20Size&style=for-the-badge&logo=appveyor">
+</p>
+
 ## NOTE
 This Script is for everyone, not for Sale. Jika dijual neraka menunggumu brother !
 
