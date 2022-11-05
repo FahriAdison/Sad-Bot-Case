@@ -7,7 +7,7 @@ agar tidak terjadi error
 Script WhatsApp Bot Multi Device
 
 <p align="center">
-<img width="" src="https://img.shields.io/github/repo-size/FahriAdison/Sad-Bot-Case?color=red&label=Repo%20Size&style=for-the-badge&logo=appveyor">
+<img width="" src="https://img.shields.io/github/repo-size/FahriAdison/Sad-Bot-Case?color=green&label=Repo%20Size&style=for-the-badge&logo=appveyor">
 </p>
 
 ## NOTE
