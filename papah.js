@@ -182,14 +182,14 @@ module.exports = papah = async (papah, m, chatUpdate, store) => {
 	    if (setting) {
 		if (!isNumber(setting.status)) setting.status = 0
         if (!('anticall' in setting)) setting.anticall = true
-		if (!('autobio' in setting)) setting.autobio = false
+		if (!('autobio' in setting)) setting.autobio = true
 		if (!('templateImage' in setting)) setting.templateImage = true
 		if (!('templateVideo' in setting)) setting.templateVideo = false
 		if (!('templateGif' in setting)) setting.templateGif = false
 		if (!('templateMsg' in setting)) setting.templateMsg = false	
 	    } else global.db.data.settings[botNumber] = {
 		status: 0,
-		autobio: false,
+		autobio: true,
 		templateImage: true,
 		templateVideo: false,
 		templateGif: false,
@@ -289,7 +289,7 @@ jumlahharian = `${dataa.value}`
 	    let setting = global.db.data.settings[botNumber]
 	    if (new Date() * 1 - setting.status > 1000) {
 		let uptime = await runtime(process.uptime())
-		await papah.setStatus(`${papah.user.name} | Runtime : ${runtime(uptime)}`)
+		await papah.setStatus(`Sad-Bot | Runtime : ${runtime(uptime)}`)
 		setting.status = new Date() * 1
 	    }
 	}
@@ -1059,8 +1059,8 @@ break
 			break
             case 'runtime': case 'tes': {
             	let lowq = `*Bot Telah Online Selama*\n*${runtime(process.uptime())}*`
-                papah.sendMessage(m.chat, { text: lowq }, {quoted: fkontak})
-                papah.setStatus(`${papah.user.name} | Runtime : ${runtime(process.uptime())}`)
+                papah.sendMessage(m.chat, { text: lowq }, {quoted: ftoko})
+                papah.setStatus(`Sad-Bot | Runtime : ${runtime(process.uptime())}`)
             	}
             break
             case 'req': case 'request': {
