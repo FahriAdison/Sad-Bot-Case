@@ -19,9 +19,9 @@ global.APIKeys = {
 }
 
 // Other
-global.owner = ['6282287219167']
-global.ownernomer = "6282287219167"
-global.premium = ['6282287219167']
+global.owner = ['6283894145941']
+global.ownernomer = "6283894145941"
+global.premium = ['6283894145941']
 global.packname = 'Sticker By'
 global.author = 'Sad-Bot'
 global.sessionName = 'papah'  //jangan diganti bro nanti error
@@ -51,7 +51,7 @@ global.mess = {
 // Limit
 global.limitawal = {
     premium: "Infinity",
-    free: 25
+    free: 30
 }
 
 // Fake
@@ -66,7 +66,7 @@ global.mygc = ""
 
 // Engak Ngaruh, Belum Kepasang
 global.botname = 'SAD BOT'
-global.akulaku = 'Bot By Papah'
+global.akulaku = 'Bot By Fiki'
 global.ytname = 'YT PAPAH' //Kalo Ngk Punya Yt Ngak Usah Di Ganti
 
 
