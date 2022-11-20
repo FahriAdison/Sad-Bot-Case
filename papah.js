@@ -1271,11 +1271,11 @@ m.reply(`*Nomor wa.me/${prmin} telah di unban !*`)
                 await papah.groupUpdateDescription(m.chat, text).then((res) => m.reply(mess.success)).catch((err) => m.reply(jsonformat(err)))
             }
             break
-          case 'setppbot': {
-                if (!isCreator) throw mess.owner
-                if (!quoted) throw `Kirim/Reply Image Dengan Caption ${prefix + command}`
-                if (!/image/.test(mime)) throw `Kirim/Reply Image Dengan Caption ${prefix + command}`
-                if (/webp/.test(mime)) throw `Kirim/Reply Image Dengan Caption ${prefix + command}`
+            case 'setppbot': case 'setbotpp':{
+                if (!isCreator) m.reply(mess.owner)
+                if (!quoted) m.reply `Send/Reply Image With Caption ${command}`
+                if (!/image/.test(mime)) reply `Send/Reply Image With Caption ${command}`
+                if (/webp/.test(mime)) reply `Send/Reply Image With Caption ${command}`
                 let media = await papah.downloadAndSaveMediaMessage(quoted)
                 await papah.updateProfilePicture(botNumber, { url: media }).catch((err) => fs.unlinkSync(media))
                 m.reply(mess.success)
@@ -2791,6 +2791,14 @@ break
                 papah.sendMessage(m.chat, { image: { url: random.female }, caption: `Couple Female` }, { quoted: m })
             }
 	    break
+        case 'couple': case 'ppcp':{
+            m.reply(mess.wait)
+                            let anu = await fetchJson('https://raw.githubusercontent.com/iamriz7/kopel_/main/kopel.json')
+                            let random = anu[Math.floor(Math.random() * anu.length)]
+                            papah.sendMessage(m.chat, { image: { url: random.male }, caption: `Couple Male` }, { quoted: m })
+                            papah.sendMessage(m.chat, { image: { url: random.female }, caption: `Couple Female` }, { quoted: m })
+                        }
+                    break
             case 'coffe': case 'kopi': {
             let buttons = [
                     {buttonId: `coffe`, buttonText: {displayText: 'Next Image'}, type: 1}
@@ -3478,7 +3486,25 @@ break
                 result = anu[Math.floor(Math.random() * anu.length)]
                 papah.sendMessage(m.chat, { image: { url: result }, fileLength: jumlah, caption: `Media Url :\n`+result}, { quoted: fkontak })
             }
-            break
+            case 'ip':
+                m.reply(mess.wait)
+                const dripsba = {
+                  method: 'GET',
+                  url: 'https://find-any-ip-address-or-domain-location-world-wide.p.rapidapi.com/iplocation',
+                  qs: {apikey: '873dbe322aea47f89dcf729dcc8f60e8'},
+                  headers: {
+                    'X-RapidAPI-Key': '837661b454msh274b6753ca80823p11c653jsn973bb2a55a34',
+                    'X-RapidAPI-Host': 'find-any-ip-address-or-domain-location-world-wide.p.rapidapi.com',
+                    useQueryString: true
+                  }
+                };
+                let bhudhi = require('request')
+                bhudhi(dripsba, function (error, response, body) {
+                  if (error) throw new Error(error);
+                  m.reply(body);
+                  console.log(body);
+                });
+          break
 case 'cnn-news': 
 CNNNews().then(res => {
 no = 0
@@ -4262,6 +4288,7 @@ let buttons = [{ buttonId: 'simplemenu', buttonText: { displayText: '⬅️Back'
             case 'mrandom': {
 rndom = `╭──❍ *Random Menu*
 │
+│⭔ ${prefix}ppcp
 │⭔ ${prefix}gbtku
 │⭔ ${prefix}coffe
 │⭔ ${prefix}quotesanime
