@@ -976,20 +976,6 @@ break
                     papah.sendMessage(m.chat, { text: `Rate Bot : *${te}%*` }, { quoted: m })
                     }
 					break
-			case 'ganteng': case 'gantengcek': case 'handsome': case 'handsomecheck': {
-				    if (!text) return replay(`Tag Someone, Example : ${prefix + command} papah`)
-					const ra = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
-					const te = ra[Math.floor(Math.random() * ra.length)]
-                    papah.sendMessage(m.chat, { text: `Cek Ganteng : ${text}\nRate Bot : *${te}%*` }, { quoted: m })
-                    }
-					break
-			case 'cantik': case 'cantikcek': case 'beautiful': case 'beautifulcheck': {
-				    if (!text) return replay(`Tag Someone, Example : ${prefix + command} papah`)
-					const ra = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
-					const te = ra[Math.floor(Math.random() * ra.length)]
-                    papah.sendMessage(m.chat, { text: `Cek Cantik : ${text}\nRate Bot : *${te}%*` }, { quoted: m })
-                    }
-					break
 			case 'tanyakerang': case 'kerangajaib': case 'kerang': {
 				if (!text) throw `Example : ${prefix + command} saya menang?`
 				let krng = ['Mungkin suatu hari', 'Tidak juga', 'Tidak keduanya', 'Kurasa tidak', 'Ya', 'Tidak', 'Coba tanya lagi', 'Tidak ada']
@@ -2841,7 +2827,7 @@ break
             break
             case 'gcsearch': {
             	try {
-            	if (!text) return m.replay(`Example :\n${prefix}searchgc Classy Editor`)
+            	if (!text) return m.reply(`Example :\n${prefix}searchgc Classy Editor`)
                 nae = args.join(" ")
                 hx.linkwa(nae).then(res => {
                 teks = '```「 Search Group 」```'
@@ -4025,7 +4011,17 @@ let capt = `⭔ Title: ${judul}
             papah.sendImage(m.chat, res.result[0].thumbnail, capt, m)
             }
             break
-
+            case 'goblokcek': case 'jelekcek': case 'rate':case 'haram':case 'gaycek':
+                case 'lesbicek':case 'gantengcek': case 'cantikcek':case 'begocek': case 'suhucek':case 'pintercek':
+                case 'jagocek':case 'nolepcek':case 'babicek':case 'bebancek':case 'baikcek':
+                case 'jahatcek':case 'anjingcek':case 'haramcek':case 'pakboycek':
+                case 'pakgirlcek':case 'sangecek': case 'bapercek':case 'fakboycek':case 'alimcek':case 'suhucek':
+                case 'fakgirlcek':case 'kerencek':case 'wibucek':case 'pasarkascek':
+                cantik = body.slice(1)
+                const eyy =['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
+                const yn = eyy[Math.floor(Math.random() * eyy.length)]
+                papah.sendMessage(m.chat, { text: yn }, { quoted: m })
+                break
 //PEMBATAS Menu=======================================
             case 'rules': {
 rules = `*Rules BOT*
@@ -4071,6 +4067,7 @@ let alfamart = `628111500959@s.whatsapp.net`
             }
             break
             case 'menu': {
+                papah_dev = await getBuffer(`https://github.com/DGXeon/Tiktokmusic-API/raw/master/tiktokmusic/sound50.mp3`)
             let ownernya = ownernomer + '@s.whatsapp.net'
             let me = m.sender
             let jawab = `*${ucapanWaktu}*
@@ -4099,29 +4096,10 @@ let alfamart = `628111500959@s.whatsapp.net`
 ╰──❍`
             let ments = [ownernya, me, ini_mark]
             let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: 'rules', buttonText: { displayText: '❗Rules' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            let buttonMessage = {
-  document: fs.readFileSync('./media/doc/fake.pdf'),
-  fileName : akulaku + (` | Halo ${pushname}`),
-  mimetype: `${filsk}`,
-  fileLength: jumhal,
-  pageCount: jumlha,
-  caption: jawab,
-  footer: nyoutube,
-  buttons: buttons,
-  mentions: ments,
-  headerType: 4,
-  contextInfo:{externalAdReply:{
-    tittle: 'Simple Bot Case', 
-    body: botname,
-    showAdAttribution: true,
-    thumbnail: thumb,
-    mediaType: "VIDEO",
-    mediaUrl: "https://api.zacros.my.id/randomimg/loli", 
-    sourceUrl: myyt
-  }}
+
+  papah.sendButtonText(m.chat, buttons, jawab, nyoutube, fkontak, {mentions: ments})
+  papah.sendMessage(m.chat, { audio: papah_dev, mimetype: 'audio/mp4', ptt: true }, { quoted: fkontak })    
 }
-  papah.sendMessage(m.chat, buttonMessage, {quoted: ftoko})
-  }
  break
             case 'simplemenu': case 'list': case 'help': {
             let ownernya = ownernomer + '@s.whatsapp.net'
@@ -4724,6 +4702,40 @@ _⫹⫺ Fitur : 200_
 │⭔ ${prefix}cecanjapan
 │⭔ ${prefix}cecanthailand
 │⭔ ${prefix}cecanchina
+│
+╰────❍
+╭──❍ *Cek Menu*
+│
+│⭔ ${prefix}goblokcek 
+│⭔ ${prefix}jelekcek 
+│⭔ ${prefix}rate
+│⭔ ${prefix}haram
+│⭔ ${prefix}gaycek
+│⭔ ${prefix}lesbicek
+│⭔ ${prefix}gantengcek 
+│⭔ ${prefix}cantikcek
+│⭔ ${prefix}begocek 
+│⭔ ${prefix}suhucek
+│⭔ ${prefix}pintercek
+│⭔ ${prefix}jagocek
+│⭔ ${prefix}nolepcek
+│⭔ ${prefix}babicek
+│⭔ ${prefix}bebancek
+│⭔ ${prefix}baikcek
+│⭔ ${prefix}jahatcek
+│⭔ ${prefix}anjingcek
+│⭔ ${prefix}haramcek
+│⭔ ${prefix}pakboycek
+│⭔ ${prefix}pakgirlcek
+│⭔ ${prefix}sangecek 
+│⭔ ${prefix}bapercek
+│⭔ ${prefix}fakboycek
+│⭔ ${prefix}alimcek
+│⭔ ${prefix}suhucek
+│⭔ ${prefix}fakgirlcek
+│⭔ ${prefix}kerencek
+│⭔ ${prefix}wibucek
+│⭔ ${prefix}pasarkascek
 │
 ╰────❍
 ╭──❍ *Random Sticker*
