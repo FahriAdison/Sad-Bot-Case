@@ -1647,6 +1647,16 @@ m.reply(`Mengirim Broadcast Ke ${anu.length} Chat\nWaktu Selesai ${anu.length * 
 		m.reply('Sukses Broadcast')
 }
 break
+
+case 'getcase':
+if (!isCreator) return m.reply(mess.owner)
+if (args.length < 1) return m.reply ("*Mau nyari case apa*") 
+const getCase = (cases) => {
+return "case"+`'${cases}'`+fs.readFileSync("papah.js").toString().split('case \''+cases+'\'')[1].split("break")[0]+"break"
+}
+m.reply (`${getCase(q)}`)
+break
+
 case 'infochat': {
 if (!m.quoted) m.reply('Reply Pesan')
 let msg = await m.getQuotedObj()
@@ -4938,6 +4948,7 @@ _⫹⫺ Fitur : 200_
 │⭔ ${prefix}quoted
 │⭔ ${prefix}listpc
 │⭔ ${prefix}listgc
+│⭔ ${prefix}ip
 │⭔ ${prefix}listonline
 │⭔ ${prefix}speedtest
 │⭔ ${prefix}menfes 
@@ -4991,6 +5002,7 @@ _⫹⫺ Fitur : 200_
 ╰────❍
 ╭──❍ *Owner Menu*
 │
+│⭔ ${prefix}getcase
 │⭔ ${prefix}sendsesi
 │⭔ ${prefix}react [emoji]
 │⭔ ${prefix}chat [option]
@@ -5278,4 +5290,4 @@ fs.watchFile(file, () => {
 	console.log(chalk.redBright(`Update ${__filename}`))
 	delete require.cache[file]
 	require(file)
-})
+}
