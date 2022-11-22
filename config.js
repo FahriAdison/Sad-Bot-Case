@@ -1,7 +1,7 @@
 /**
-   * Create By Dika Ardnt.
-   * Recode By Naze Dev && Papah-Chan
-   * Contact Me on wa.me/6282287219167
+   * Create By asep.
+   * Recode By aliamsya && asep
+   * Contact Me on wa.me/6285362461878
    * Follow https://github.com/FahriAdison
 */
 
@@ -19,9 +19,9 @@ global.APIKeys = {
 }
 
 // Other
-global.owner = ['6282287219167']
-global.ownernomer = "6282287219167"
-global.premium = ['6282287219167']
+global.owner = ['6285362461878']
+global.ownernomer = "6285362461878"
+global.premium = ['6285362461878']
 global.packname = 'Sticker By'
 global.author = 'Sad-Bot'
 global.sessionName = 'papah'  //jangan diganti bro nanti error
