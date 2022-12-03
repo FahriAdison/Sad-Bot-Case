@@ -19,11 +19,11 @@ global.APIKeys = {
 }
 
 // Other
-global.owner = ['6282287219167']
-global.ownernomer = "6282287219167"
+global.owner = ['6281269734000','6283113158288','6289690714180','6288217905956']
+global.ownernomer = "6281269734000","6283113158288","6289690714180","6288217905956"
 global.premium = ['6282287219167']
 global.packname = 'Sticker By'
-global.author = 'Sad-Bot'
+global.author = 'Akmal-Gtps'
 global.sessionName = 'papah'  //jangan diganti bro nanti error
 global.jumlha = '999'
 global.jumhal = '100000000000000'
@@ -51,7 +51,7 @@ global.mess = {
 // Limit
 global.limitawal = {
     premium: "Infinity",
-    free: 25
+    free: 50
 }
 
 // Fake
@@ -65,9 +65,9 @@ global.myytv = ''
 global.mygc = ""
 
 // Engak Ngaruh, Belum Kepasang
-global.botname = 'SAD BOT'
-global.akulaku = 'Bot By Papah'
-global.ytname = 'YT PAPAH' //Kalo Ngk Punya Yt Ngak Usah Di Ganti
+global.botname = 'Nyx-Bot'
+global.akulaku = 'Bot By Akmal'
+global.ytname = 'Sphnx' //Kalo Ngk Punya Yt Ngak Usah Di Ganti
 
 
 let file = require.resolve(__filename)
