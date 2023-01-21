@@ -19,11 +19,11 @@ global.APIKeys = {
 }
 
 // Other
-global.owner = ['6282287219167']
-global.ownernomer = "6282287219167"
-global.premium = ['6282287219167']
-global.packname = 'Sticker By'
-global.author = 'Sad-Bot'
+global.owner = ['6285658807688']
+global.ownernomer = "6285658807688"
+global.premium = ['6285658807688']
+global.packname = 'Billa'
+global.author = 'Veraa'
 global.sessionName = 'papah'  //jangan diganti bro nanti error
 global.jumlha = '999'
 global.jumhal = '100000000000000'
@@ -65,8 +65,8 @@ global.myytv = ''
 global.mygc = ""
 
 // Engak Ngaruh, Belum Kepasang
-global.botname = 'SAD BOT'
-global.akulaku = 'Bot By Papah'
+global.botname = 'Billa'
+global.akulaku = 'Bot Veraa'
 global.ytname = 'YT PAPAH' //Kalo Ngk Punya Yt Ngak Usah Di Ganti
 
 
